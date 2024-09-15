@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness for Women Clinic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="flex.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: -10px;
+            padding: 0;
+            color: black; 
+            overflow-x: hidden;
+            background-color: linen;
+        }
+        
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            margin-left: auto; 
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        .logo i {
+            margin-right: 10px;
+            font-size: 24px; 
+        }
+        .motto-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .motto {
+            font-size: 18px;
+            color: #333;
+        }
+        .input-field {
+            border: 1px solid black;
+            width: 50%;
+            height: 20%;
+        }
+        .signup-button {
+            margin-left: 70%;
+            background-color: #141313;
+            color: #fff;
+            width: 30%;
+            height: 100%;
+        }
+        
+        .play-button {
+            width: 30px; 
+            height: 30px; 
+            background-color: grey; 
+            border: none;
+            border-radius: 50%; 
+            position: relative;
+            cursor: pointer;
+            left: 70px;
+            top: 10px;
+        }
+
+        .play-button::before {
+            content: '';
+            position: absolute;
+            left: 10px; 
+            top: 10px; 
+            width: 0;
+            height: 0;
+            border-left: 10px solid black; 
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+        .image-container img {
+            max-width: 100%; 
+            height: 80vh;
+            max-height: 200px; 
+            width: 80vw;
+        }
+        .container {
+            display: flex;
+            margin-bottom: 20px; 
+        }
+        .text-area {
+            flex: 1; 
+            margin-right: 10px; 
+        }
+        .right-container, .bottom-container {
+            flex: 1; 
+            background-color: #fff; 
+            border: 1px solid #ccc; 
+            padding: 10px;
+            width: 400px;
+            height: 400px;
+        }
+        textarea {
+            width: 100%; 
+            height: 200px;
+            padding: 10px; 
+            border: 1px solid #14131300; 
+            border-radius: 4px;
+            resize: none; 
+            font-size: xx-large;
+        }
+        h1 {
+            text-align: center;
+        }
+        .review-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 20px 0;
+            border:1px solid #333;
+            max-width: 100%;
+        }
+        .review {
+            display: flex;
+            align-items: center;
+            border: 1px solid #141313;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: 900px;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .submit-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 10%;
+            width: 900px;
+            margin-top: 20px;
+            max-width: 100%;
+            background-color: #ccc;
+    
+        }
+        .submit-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            margin-left: 50%;
+        }
+        .join-text {
+            text-align: center;
+            font-size: 30px;
+            margin: 20px 0;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <i class="fas fa-female"></i> 
+            <span>Wellness for Women Clinic</span>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Resource Center</a>
+            <a href="#">Sign Up</a>
+            <a href="#">Login</a>
+        </div>
+    </div>
+    <div class="motto-container">
+        <div class="motto">
+        <strong>Empowering Women, Enriching Lives.</strong>
+        <p>We are dedicated towards uplifting women through quality healthcare, education and support.</p>
+        <p>Together we can provide transformative women thus strong, resilient and lasting communities</p>
+        <p>Our Guiding Principles
+            <li>Holistic Care</li> 
+            <li>Education and Awareness</li>
+            <Li>Supportive Environment</Li>
+            <li>Community Impact</li>
+        </p>
+            <div class="input-field">
+                <button class="signup-button">Sign Up</button>
+            </div>
+
+        <button style="background-color: #141313; color: #fff;">BOOK NOW</button>
+        <button class="play-button" aria-label="Play"></button>
+       
+        </div>
+        <div class="image-container">
+            <img src="./health-3961686_1920.jpg" alt="Wellness Image">
+        </div>
+    </div>
+    <div class="container">
+        <div class="rectangle">
+            <div class="square1">
+                <h3 style="color: #fff; font-size: large;">95%</h3>
+                <p style="color: #fff; font-size: large;">success rates </p>
+            </div>
+            <div class="square1">
+                <h3 style="color: #fff; font-size: large;">1,500+</h3>
+                <p style="color: #fff; font-size: large; margin-bottom: 10%;">clients quarterly</p>
+            </div>
+            <div class="square1">
+                <h3 style="color: #fff; font-size: large;">3000+</h3>
+                <p style="color: #fff; font-size: large;">Returning clients </p>
+            </div>
+            <div class="square1">
+                <h3 style="color: #fff; font-size: large;">100%</h3>
+                <p style="color: #fff; font-size: large;">customer care</p>
+            </div>
+        </div>
+      </div>
+        <h1 style="text-align: center;">OUR BEST SERVICES </h1>
+            <div class="container-1">
+                <div class="square">
+                    <img src="./download5.jpeg" alt="" srcset="" height="80%">
+                    <h3 style="text-align: center;">All Specialists</h3>  
+                </div>
+                <div class="square">
+                    <img src="./download7.jpeg" alt="icon" srcset="" width="100%" height="80%">
+                    <h3 style="text-align: center;">Private & Secure</h3>
+                </div>
+                <div class="square">
+                    <img src="./download6.jpeg" alt="" srcset="" width="100%" height="80%">
+                    <h3 style="text-align: center;">Millions Customers</h3>
+                </div>
+                <div class="square">
+                    <img src="./download8.jpeg" alt="" srcset="" height="80%">
+                    <h3 style="text-align: center;">Chatbot Support</h3>
+                </div>
+            </div>
+            <div class="container-1">
+            <div class="square">
+                <img src="./woman-6783646_640.jpg" alt="icon" srcset="" width="100%" height="65%">
+                <h3 style="text-align: center;">Obstetrics And Gynaecology</h3>
+            </div>
+            <div class="square">
+                <img src="./download.jpeg" alt="icon" srcset="" width="100%" height="65%">
+                <h3 style="text-align: center;">Menopause and Hormonal Health</h3>
+            </div>
+            <div class="square">
+                <img src="./mental-health-4232031_640.jpg" alt="" srcset="" width="100%" height="65%">
+                <h3 style="text-align: center;">Mental health</h3>
+            </div>
+            <div class="square">
+                <img src="./download4.jpeg" alt="icon" srcset=""  width="100%" height="65%">
+                <h3 style="text-align: center;">Maternal-Fetal Medicine</h3>
+            </div>
+            <div class="square">
+                <img src="./download2.jpeg" alt="icon" width="100%" height="65%">
+                <h3 style="text-align: center;">Sexual Health Services </h3>
+            </div>
+            <div class="square">
+                <img src="./download3.jpeg" alt="icon" width="100%">
+                <h3 style="text-align: center;">Preventive Health Services </h3>
+            </div>
+            </div>
+    <h3>Are you looking for:</h3>
+            <div class="container-1">
+                <div class="square">
+                    <h4 style="text-align: center;">Doctors</h4>
+                    <p>Who offer specilaized care that offers patient-centric experience ensuring privacy and convenient access.</p>
+                </div>
+                <div class="square">
+                    <h4 style="text-align: center;">Consult</h4>
+                    <p>Tailored towards addressing unique health needs of Women. We offer personalized care with a wide of comprehensive services from specialized experts tailored to be accessible. comfortable and private.</p>
+                </div>
+                <div class="square">
+                    <h4 style="text-align: center;">Pharmacy</h4>
+                    <p>Offering confidential,convenient access and comprehensive medication management. We are committed to offering specialized services and expert consultations for women.</p>
+                </div>
+                <div class="square">
+                    <h4 style="text-align: center;">Diagnostics</h4>
+                    <p>Offering wide range of comprehensive diagnostic services that is of high standards and accreditated, managed by specialized experts to meet your health needs</p>
+                </div>
+            </div>
+    <h1 style="text-align: center;">Our Best Doctors</h1>
+            <div class="container-1">
+                <div class="square">
+                    <img src="./doc4.png" alt="image" class="doc-pic" width="40%">
+                    <h3 style="text-align: center;">Dr.Alex Ph.D.</h3>
+                    <p>PhD in Maternal-Fetal Medicine</p>
+                </div>
+                <div class="square">
+                    <img src="./doc3.png" alt="image" class="doc-pic" width="40%">
+                    <h3 style="text-align: center;">Dr.Robert Ph.D.</h3>
+                    <p>PhD in Reproductive Endocrinology</p>
+                </div>
+                <div class="square">
+                    <img src="./doc2.png" alt="image" class="doc-pic" width="30%">
+                    <h3 style="text-align: center;">Dr.Angel Ph.D.</h3>
+                    <p>PhD in Obstetrics and Gynecology</p>
+                </div>
+                <div class="square">
+                    <img src="./doc1.png" alt="image" class="doc-pic" width="32%">
+                    <h3 style="text-align: center;">Dr.Rusinu Ph.D.</h3>
+                    <p >PhD in Health Education,Sexuality Studies</p>
+                </div>
+            </div>
+    <h1 style="text-align: center;">Easy Steps And Get Your Solution</h1>
+            <div class="container-1">
+                <div class="square">
+                    <img src="./download9.jpeg" alt="icon1" class="doc-pic" width="50%">
+                    <h4 style="text-align: center;"> Check Doctors Profile</h4>
+                </div>
+                <div class="square" >
+                    <img src="./download10.png" alt="icon1" class="doc-pic" width="50%">
+                    <h4 style="text-align: center;">Request Consultation</h4>
+                </div>
+                <div class="square" >
+                    <img src="./download11.jpeg" alt="icon1" class="doc-pic" width="50%" style="text-align: center;">
+                    <h4 style="text-align: center;">Receive Your Consultation</h4>
+                </div>
+                <div class="square">
+                    <img src="./download12.png" alt="icon1" class="doc-pic" width="50%">
+                    <h4 style="text-align: center;">Get Your Solution</h4>
+                </div>
+            </div>
+            <div class="container">
+                <textarea class="text-area" placeholder="Best Doctor Anywhere and Anytime With exceptional talent and expertise tailored towards compassion and patient-centred healthcare"></textarea>
+                <div class="right-container">
+                    <img src="./download13.jpeg" alt="" width="100%" height="100%">
+                </div>
+            </div>
+        <button type="button" style="background-color: #141313; color: #fff; font-weight:bolder; padding: 15px;margin-left: 15px;">Find Doctor Now</button>
+            <div class="container">
+                <div class="bottom-container">
+                    <img src="./download14.jpeg" alt="" width="100%" height="100%">
+                </div>
+                <textarea class="text-area" placeholder="Urgent Online Care. Solution To Your Problems">Urgent Online Care. Solution to Your Problem </textarea>
+            </div>
+            <button type="button" style="font-weight: bolder; background-color: #141313; color: #fff; margin-left: 50%; padding: 15px;">Take Appointment</button>
+ 
+    
+   <h1>What People Say About Us</h1>
+    <div class="review-container">
+        <div class="review">
+            <img src="./download15.png" alt="Profile Pic" class="profile-pic">
+            <div>
+                <strong>Clare Doe</strong>
+                <p>Their services are amazing!</p>
+            </div>
+        </div>
+        <div class="review">
+            <img src="./download15.png" alt="Profile Pic" class="profile-pic">
+            <div>
+                <strong>Jane Smith</strong>
+                <p>Highly recommend to everyone!</p>
+            </div>
+        </div>
+    </div>
+    <div class="submit-container">
+    <p class="join-text">Want To <strong>Register</strong> Easily</p>
+        <button class="submit-button">Submit Here</button>
+    </div>
+          
+      <footer>
+            <div class="footer-column">
+                <h4><i class="fas fa-female"></i> <!-- Example icon -->
+                    <span>Wellness for Women Clinic</span>
+                </h4>
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+           
+      <div class="footer-column">
+        <h4>Services</h4>
+        <a href="#">Delivery Support</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms Of Use</a>
+        <a href="#">Privacy Policy</a>
+    </div>
+    <div class="footer-column">
+        <h4>Features</h4>
+        <a href="#">Home</a>
+        <a href="#">Doctors</a>
+        <a href="#">Facility</a>
+        <a href="#">About Us</a>
+    </div>
+    <div class="footer-column">
+        <h4>User</h4>
+        <a href="#">User Login</a>
+        <a href="#">User Registration</a>
+        <a href="#">Forgot Password</a>
+        <a href="#">Account Setting</a>
+    </div>
+    <div class="footer-row">
+        <p>&copy; 2024 Wellness for Women Clinic. All rights reserved.</p>
+        <p>Follow Us | Contact Us | Terms Of Use | Privacy Policy</p>
+      </div>      
+    </footer>
+      
+
+</body>
+</html>
